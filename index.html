@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <main id="main">
+        <div class="slider">
+            <div class="slides">
+                <!--slide1-->
+                <div class="slide active">
+                    <img src="./images/1.webp" alt="Ahmed Ali">
+                    <h4>"Fantastic platform! The courses are well-structured, and I learned a lot in a short time.
+                        Highly recommended for anyone looking to improve their skills!"</h4>
+                    <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+                    <h3>Ahmed Ali</h3>
+                    <span class="job">Frontend Developer</span>
+                </div>
+                <!--slide2-->
+                <div class="slide ">
+                    <img src="./images/2.webp" alt="Omar Farooq">
+                    <h4>"This platform has changed the way I approach learning. The material is comprehensive,
+                        and the support team is very responsive."</h4>
+                    <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+                    <h3>Omar Farooq</h3>
+                    <span class="job">Backend Developer</span>
+                </div>
+                <!--slide3-->
+                <div class="slide">
+                    <img src="./images/3.webp" alt="Hassan Jamil">
+                    <h4>"An amazing experience from start to finish. The lessons are easy to follow, and the
+                        instructors are incredibly knowledgeable."</h4>
+                    <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+                    <h3>Hassan Jamil</h3>
+                    <span class="job">Software Architect</span>
+                </div>
+                <!--slide4-->
+                <div class="slide">
+                    <img src="./images/4.webp" alt="Yusuf Khan">
+                    <h4>"I've tried many online learning sites, but this one stands out. The interface is user-friendly,
+                        and the content quality is excellent."</h4>
+                    <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+                    <h3>Yusuf Khan</h3>
+                    <span class="job">Full-stack Developer</span>
+                </div>
+
+                <button class="slide-left"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slide-right"><i class="fa-solid fa-chevron-right"></i></button>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

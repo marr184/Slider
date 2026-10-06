@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root {
+    --b-g-c: #FBEBD5;
+    --style: #F7AE45;
+}
+
+#main {
+    background-color: var(--b-g-c);
+    display: flex;
+    justify-content: center;}
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 600px;
+    padding: 0 50px;
+}
+
+.slider .slides {
+    position: relative;
+}
+
+.slides .slide {
+    display: none;
+}
+
+.slides .slide.active {
+    display: block;
+}
+
+.slider .slides .slide img {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    margin: 25px 0;
+}
+
+.slider .slides .slide h4 {
+    font-weight: 500;
+    line-height: 2;
+    padding: 0 0 10px;
+}
+
+.slider .slides .slide .quote {
+    font-size: 40px;
+    color: var(--style);
+    margin-bottom: 10px;
+}
+
+.slider .slides .slide h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* .slider .slides .slide span.job {
+    padding-bottom: 250px;
+} */
+
+.slider .slides .slide-left,
+.slider .slides .slide-right{
+    position: absolute;
+    top: 50%;
+    background-color: #b7ac9e;
+    color: #fff;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.slider .slides .slide-right {
+    right: -10%;
+}
+.slider .slides .slide-left {
+    left: -10%;
+}
+.dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dots .dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    font-size: 20px;
+    background-color: #646464;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.dots .dot.active {
+    background-color: var(--style)
+}
+
